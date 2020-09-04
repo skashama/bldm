@@ -15,12 +15,140 @@ body {
   }
 }
 
-header {
-  width: 100%;
-  height: 100px;
-  background-color: #fff;
+/* Header */
+.bldm-header {
+  background-color: #3a3a3a;
   position: fixed;
-  z-index: 0;
   top: 0;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Front page */
+.slider-container {
+  img {
+    width: 100%;
+  }
+}
+
+.homepage-header img {
+  width: 100%;
+  height: 500px;
+
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media (max-width: 425px) {
+    height: 300px;
+  }
+}
+
+.homepage-banner-text {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-top: 10%;
+  letter-spacing: 0.02em;
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+
+  @media (min-width: 425px) and (max-width: 660px) {
+    font-size: 25px;
+    margin-top: 20%;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 5%;
+  }
+}
+
+/* wrap container */
+.wrap-container {
+  flex: 1 0 auto;
+}
+
+.main-content {
+  padding: 2% 5%;
+  margin-bottom: 2%;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (max-width: 426px) {
+    font-size: 25px;
+  }
+}
+
+.main-content p {
+  padding: 0 1rem;
+}
+
+.fixed-middle-section-wrap {
+  position: relative;
+
+  .fixed-bg-middle-section {
+    opacity: 0.5;
+    min-height: 500px;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      min-height: 350px;
+      background-size: 120% !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: 350px;
+      background-size: unset !important;
+    }
+  }
+
+  .fixed-middle-section-text {
+    color: $black;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+    top: 10px;
+
+    @include media-breakpoint-down(md) {
+      color: $black;
+      font-size: 18px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+      line-height: normal;
+      color: $black;
+    }
+  }
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#contact {
+  padding: 100px 0 40px 0;
+  background-color: #5a5757;
+  color: #fff;
+}
+
+/* footer */
+footer {
+  background-color: #3a3a3a;
+  height: 60px;
+  color: white;
+  width: auto;
+  flex-shrink: 0;
+  padding-top: 15px;
 }
