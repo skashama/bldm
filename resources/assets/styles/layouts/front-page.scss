@@ -1,0 +1,136 @@
+.slider-container {
+  img {
+    width: 100%;
+  }
+}
+
+.homeslide .slick-next {
+  display: none !important;
+}
+
+.homepage {
+  margin-top: -5%;
+}
+
+.homepage-header img {
+  width: 100%;
+  height: 500px;
+
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media (max-width: 425px) {
+    height: 300px;
+  }
+}
+
+.homepage-banner-text {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-top: 10%;
+  letter-spacing: 0.02em;
+
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+
+  @media (min-width: 425px) and (max-width: 660px) {
+    font-size: 25px;
+    margin-top: 20%;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 5%;
+  }
+}
+
+.main-content {
+  padding: 2% 5%;
+  margin-bottom: 2%;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (max-width: 426px) {
+    font-size: 25px;
+  }
+}
+
+.main-content p {
+  padding: 0 1rem;
+}
+
+.middle-section-wrap {
+  background-color: #5a5757;
+  color: #fff;
+}
+
+.bldm-section-header {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.single-quotes-section {
+  max-width: 100vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.quotes-section {
+  padding-bottom: 2rem;
+}
+
+.quotes-section .slick-next {
+  @media (max-width: 576px) {
+    right: 0;
+  }
+}
+
+.quotes-section .slick-prev {
+  @media (max-width: 576px) {
+    left: 0;
+  }
+}
+
+.quotes-header {
+  font-size: 34px;
+
+  @media (max-width: 320px) {
+    font-size: 30px;
+  }
+}
+
+hr {
+  height: 1px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: darkgrey;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#contact {
+  padding: 95px 0;
+  background-color: #8e8b86;
+  color: #fff;
+}
+
+.contact-main-content {
+  @media (min-width: 500px) {
+    margin: 0 8rem;
+  }
+}

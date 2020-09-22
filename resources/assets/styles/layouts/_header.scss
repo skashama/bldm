@@ -5,3 +5,14 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.bldm-header {
+  background-color: #3a3a3a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

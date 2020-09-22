@@ -36,46 +36,50 @@
         <div class="button-group">
           <?php
           if( $link ): ?>
-            <a href="<?php echo esc_url( $link ); ?>" class="btn btn-outline-info btn-lg" tabindex="-1" role="button"><?= the_field('cta_one'); ?></a>
-            <a href="<?php echo esc_url( $linkTwo ); ?>" class="btn btn-outline-secondary btn-lg" tabindex="-1" role="button"><?= the_field('cta_two'); ?></a>
+            <a href="<?php echo esc_url( $link ); ?>" class="mb-2 btn btn-outline-info btn-lg" tabindex="-1" role="button"><?= the_field('cta_one'); ?></a>
+            <a href="<?php echo esc_url( $linkTwo ); ?>" class="mb-2 btn btn-outline-secondary btn-lg" tabindex="-1" role="button"><?= the_field('cta_two'); ?></a>
           <?php endif; ?>
         </div>
       </div>
 
-      <div class="fixed-middle-section-wrap">
-        <div class="col-12 p-0 container-fluid fixed-bg-middle-section" 
-              style="background: url('@asset('images/baptism.jpeg')');
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-size: 100%;">
-        </div>
-        <div class="col-lg-4 col-md-6 overlay-text fixed-middle-section-text ">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
-            Duis aute irure dolor."</p>
+      <div class="col-12 pt-2 pb-2 row container-fluid mx-auto justify-content-center middle-section-wrap">
+        <div class="col-lg-8 col-md-10 col-sm-10 quotes-section">
+          <div class="mx-auto col-12 single-quotes-section">
+            <p class="text-center quotes-header">Lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
+              Duis aute irure dolor.</p>
+          </div>
+          <div class="mx-auto col-12 single-quotes-section">
+            <p class="text-center quotes-header">Lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
+              Duis aute irure dolor.</p>
+          </div>
+          <div class="mx-auto col-12 single-quotes-section">
+            <p class="text-center quotes-header">Lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
+              Duis aute irure dolor.</p>
+          </div>
         </div>
       </div>
 
       <div id="contact" class="text-center">
         <div class="container">
-            <div class="contact-title">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
-                Duis aute irure dolor."</p>
+          <div class="contact-title">
+            <h2>Contact</h2>
+              <hr>
+          </div>
+          <div class="row justify-content-center contact-main-content">
+            <div class="col-md-6">
+              <p><?php the_field('contact_text_two') ?></p>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
-                  Duis aute irure dolor."</p>
-              </div>
-              <div class="col-md-6">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
-                  Duis aute irure dolor."</p>  
-              </div>
-              <div class="clearfix"></div>
-            </div>          
+            <div class="col-md-6">
+              <p><?php the_field('contact_text_three') ?></p>
+            </div>
+            <div class="clearfix"></div>
+          </div>       
         </div>
       </div>
 

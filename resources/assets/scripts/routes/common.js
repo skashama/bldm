@@ -16,11 +16,18 @@ export default {
       slidesToShow: 1,
       // centerMode: true,
       // variableWidth: true,
-      // autoplay: true, this prop works
+      // autoplay: true,
       fade: true,
       cssEase: 'ease-in-out',
       // responsive: true
     });
-    console.log('hello there'); 
+    
+    $('.quotes-section').slick({
+      autoplaySpeed: 500,
+      dots: true,
+      // centerMode: true,
+      // variableWidth: true,
+      // autoplay: true,
+    })
   },
 };

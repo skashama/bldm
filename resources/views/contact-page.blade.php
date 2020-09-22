@@ -18,8 +18,5 @@
     <div class="text-center">
       <?php the_field('form_field'); ?>
     </div>
-
-
   </div>
-
 @endsection
