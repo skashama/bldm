@@ -6,17 +6,27 @@
 
 @section('content')
   <div style="width: 100%">
-    <?php 
-      $pageIntro = get_field('page_intro');
-      $formField = get_field('form_field');
-    ?>
 
-    <div>
-      <?php the_field('page_intro'); ?>
+    <div class="col-12 text-center p-4 banner-header">
+      <p class="mt-4">
+        CONTACT US
+      </p>
     </div>
+    
+    <div style="max-width: 100%" class="row justify-content-center">
+      <div class="col-lg-8 col-md-8 contact-form">
+        <div class="form-intro">
+          <?php the_field('page_intro'); ?>
+        </div>
+        <div class="form-element">
+          <?php the_field('form_field'); ?>
+        </div>
+      </div>
 
-    <div class="text-center">
-      <?php the_field('form_field'); ?>
+      <div class="col-lg-4 col-md-4 text-center est-info">
+        <?php the_field('contact_text_one'); ?>
+        <?php the_field('contact_text_two'); ?>
+      </div>
     </div>
   </div>
 @endsection

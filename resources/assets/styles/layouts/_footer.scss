@@ -6,3 +6,13 @@ footer {
   flex-shrink: 0;
   padding-top: 15px;
 }
+
+footer p {
+  @media (max-width: 376px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 13px;
+  }
+}

@@ -16,7 +16,7 @@ export default {
       slidesToShow: 1,
       // centerMode: true,
       // variableWidth: true,
-      // autoplay: true,
+      autoplay: true,
       fade: true,
       cssEase: 'ease-in-out',
       // responsive: true

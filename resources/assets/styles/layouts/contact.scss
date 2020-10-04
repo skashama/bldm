@@ -1,0 +1,29 @@
+.est-info {
+  padding-top: 15px;
+  font-size: larger;
+
+  @media (min-width: 1024px) {
+    font-size: x-large;
+  }
+}
+
+.banner-header {
+  background-color: #8e8b86;
+  margin-top: -13px;
+  color: #fff;
+}
+
+.banner-header p {
+  font-size: 32px;
+}
+
+.contact-form {
+  text-align: center;
+  padding: 15px;
+}
+
+.form-intro {
+  text-align: center;
+  color: #73777f;
+  font-weight: 700;
+}

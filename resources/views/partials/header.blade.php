@@ -1,7 +1,9 @@
 <header class="container-fluid">
   <div class="row col-12 bldm-header">
     <div class="col-3">
-      <a class="brand" href="{{ home_url('/home') }}">{{ get_bloginfo('name', 'display') }}</a>
+      <a class="brand" href="{{ home_url('/home') }}">
+        <img src="<?= get_theme_root_uri(); ?>/bldmin/dist/images/rev9.png">
+      </a>
     </div>
 
     <div class="col-8 float-right">

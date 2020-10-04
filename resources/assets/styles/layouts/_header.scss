@@ -16,3 +16,31 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.bldm-header img {
+  width: 100%;
+
+  @media (min-width: 1040px) {
+    width: 60%;
+  }
+
+  @media (max-width: 1039px) {
+    width: 65%;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 426px) {
+    width: 146%;
+  }
+
+  @media (max-width: 376px) {
+    width: 156%;
+  }
+
+  @media (max-width: 320px) {
+    width: 175%;
+  }
+}

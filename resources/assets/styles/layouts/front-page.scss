@@ -35,8 +35,8 @@
   margin-top: 10%;
   letter-spacing: 0.02em;
 
-  @media (max-width: 425px) {
-    font-size: 25px;
+  @media (min-width: 320px) and (max-width: 425px) {
+    font-size: 20px;
   }
 
   @media (min-width: 425px) and (max-width: 660px) {
@@ -45,7 +45,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin-top: 5%;
+    margin-top: 8%;
   }
 }
 
@@ -57,6 +57,7 @@
 .main-content h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-family: "Pinyon Script", cursive;
 
   @media (max-width: 426px) {
     font-size: 25px;
@@ -124,13 +125,11 @@ hr {
 }
 
 #contact {
-  padding: 95px 0;
+  padding: 60px 0;
   background-color: #8e8b86;
   color: #fff;
 }
 
-.contact-main-content {
-  @media (min-width: 500px) {
-    margin: 0 8rem;
-  }
+.contact-links a {
+  color: #fff;
 }

@@ -11,11 +11,16 @@
       $imageTwo = get_field('homepage_slider_two');
       $imageThree = get_field('homepage_slider_three');
 
-      $welcometitle = get_field('welcome_section_title');
-      $welcomemsg = get_field('welcome_section_message');
-
       $link = get_field('cta_link');
       $linkTwo = get_field('cta_link_two');
+
+      $linkThree = get_field('cta_link_three');
+      $linkFour = get_field('cta_link_four');
+
+      $script_group = get_field('featured_scripture_group');
+      $quote_group = get_field('featured_quotes_group');
+      $song_group = get_field('featured_songs_group');
+         
     ?>
 
     <div class="homepage-header">
@@ -42,25 +47,19 @@
         </div>
       </div>
 
-      <div class="col-12 pt-2 pb-2 row container-fluid mx-auto justify-content-center middle-section-wrap">
+      <div class="col-12 pt-3 pb-3 row container-fluid mx-auto justify-content-center middle-section-wrap">
         <div class="col-lg-8 col-md-10 col-sm-10 quotes-section">
           <div class="mx-auto col-12 single-quotes-section">
-            <p class="text-center quotes-header">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
-              Duis aute irure dolor.</p>
+            <p class="text-center quotes-header"><?= $script_group['scripture_title'] ?></p>
+            <p><?= $script_group['scripture_body_text'] ?></p>
           </div>
           <div class="mx-auto col-12 single-quotes-section">
-            <p class="text-center quotes-header">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
-              Duis aute irure dolor.</p>
+            <p class="text-center quotes-header"><?= $quote_group['quotes_title'] ?></p>
+            <p><?= $quote_group['quotes_body_text'] ?></p>
           </div>
           <div class="mx-auto col-12 single-quotes-section">
-            <p class="text-center quotes-header">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, 
-              Duis aute irure dolor.</p>
+            <p class="text-center quotes-header"><?= $song_group['songs_title'] ?></p>
+            <p><?= $song_group['songs_body_text'] ?></p>
           </div>
         </div>
       </div>
@@ -72,11 +71,20 @@
               <hr>
           </div>
           <div class="row justify-content-center contact-main-content">
-            <div class="col-md-6">
+            <div class="col-md-4">
+              <p><?php the_field('contact_text_one') ?></p>
+            </div>
+            <div class="col-md-4">
               <p><?php the_field('contact_text_two') ?></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4 contact-links">
               <p><?php the_field('contact_text_three') ?></p>
+              <?php
+              if( $link ): ?>
+                <a href="<?php echo esc_url( $linkThree ); ?>" class="mb-2" tabindex="-1" ><?= the_field('cta_three'); ?></a>
+                <br>
+                <a href="<?php echo esc_url( $linkFour ); ?>" class="mb-2" tabindex="-1" ><?= the_field('cta_four'); ?></a>
+              <?php endif; ?>
             </div>
             <div class="clearfix"></div>
           </div>       
