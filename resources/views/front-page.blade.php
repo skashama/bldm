@@ -47,23 +47,6 @@
         </div>
       </div>
 
-      <div class="col-12 pt-3 pb-3 row container-fluid mx-auto justify-content-center middle-section-wrap">
-        <div class="col-lg-8 col-md-10 col-sm-10 quotes-section">
-          <div class="mx-auto col-12 single-quotes-section">
-            <p class="text-center quotes-header"><?= $script_group['scripture_title'] ?></p>
-            <p><?= $script_group['scripture_body_text'] ?></p>
-          </div>
-          <div class="mx-auto col-12 single-quotes-section">
-            <p class="text-center quotes-header"><?= $quote_group['quotes_title'] ?></p>
-            <p><?= $quote_group['quotes_body_text'] ?></p>
-          </div>
-          <div class="mx-auto col-12 single-quotes-section">
-            <p class="text-center quotes-header"><?= $song_group['songs_title'] ?></p>
-            <p><?= $song_group['songs_body_text'] ?></p>
-          </div>
-        </div>
-      </div>
-
       <div id="contact" class="text-center">
         <div class="container">
           <div class="contact-title">

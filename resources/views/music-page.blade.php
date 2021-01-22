@@ -1,5 +1,5 @@
 {{-- 
-  Template Name: Gallery Page 
+  Template Name: Music Page 
 --}}
 
 @extends('layouts.app')
@@ -9,7 +9,7 @@
 
     <div class="col-12 text-center p-4 banner-header">
       <h3 class="mt-2">
-        OUR GALLERY
+        Music
       </h3>
     </div>
     

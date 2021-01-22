@@ -8,9 +8,9 @@
   <div style="width: 100%">
 
     <div class="col-12 text-center p-4 banner-header">
-      <p class="mt-4">
+      <h3 class="mt-2">
         CONTACT US
-      </p>
+      </h3>
     </div>
     
     <div style="max-width: 100%" class="row justify-content-center">
@@ -25,6 +25,7 @@
 
       <div class="col-lg-4 col-md-4 text-center est-info">
         <?php the_field('contact_text_one'); ?>
+        <br>
         <?php the_field('contact_text_two'); ?>
       </div>
     </div>
